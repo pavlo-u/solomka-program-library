@@ -10,12 +10,12 @@ pub mod processor;
 pub mod entrypoint;
 
 // export current sdk types for downstream users building with a different sdk version
-pub use solana_program;
-use solana_program::{pubkey::Pubkey, stake};
+pub use solomka_program;
+use solomka_program::{pubkey::Pubkey, stake};
 
 // XXX TODO FIXME change this
 // (XXX ask how do we as a company handle privkeys for our onchain programs?)
-solana_program::declare_id!("3cqnsMsT6LE96pxv7GR4di5rLqHDZZbR3FbeSUeRLFqY");
+solomka_program::declare_id!("3cqnsMsT6LE96pxv7GR4di5rLqHDZZbR3FbeSUeRLFqY");
 
 const POOL_STAKE_PREFIX: &[u8] = b"stake";
 const POOL_AUTHORITY_PREFIX: &[u8] = b"authority";

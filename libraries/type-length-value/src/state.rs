@@ -8,7 +8,7 @@ use {
         pod::{pod_from_bytes, pod_from_bytes_mut},
     },
     bytemuck::Pod,
-    solana_program::program_error::ProgramError,
+    solomka_program::program_error::ProgramError,
     std::{cmp::Ordering, mem::size_of},
 };
 
@@ -202,7 +202,7 @@ pub trait TlvState {
         &self,
     ) -> Result<V, ProgramError> {
         let data = get_bytes::<V>(self.get_data())?;
-        solana_program::borsh::try_from_slice_unchecked::<V>(data).map_err(Into::into)
+        solomka_program::borsh::try_from_slice_unchecked::<V>(data).map_err(Into::into)
     }
 
     /// Unpack a portion of the TLV data as bytes

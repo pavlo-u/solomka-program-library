@@ -2,7 +2,7 @@
 #![cfg(feature = "test-sbf")]
 
 use solana_program_test::*;
-use solana_sdk::{
+use solomka_sdk::{
     account::Account,
     instruction::InstructionError,
     instruction::{AccountMeta, Instruction},

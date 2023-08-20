@@ -1,5 +1,5 @@
 use {
-    solana_program::pubkey::Pubkey,
+    solomka_program::pubkey::Pubkey,
     solana_program_test::{ProgramTest, *},
     spl_associated_token_account::{id, processor::process_instruction},
 };

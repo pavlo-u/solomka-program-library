@@ -1,13 +1,13 @@
 #![cfg(feature = "test-sbf")]
 use std::str::FromStr;
 
-use solana_program::{instruction::Instruction, program_pack::Pack, pubkey::Pubkey};
+use solomka_program::{instruction::Instruction, program_pack::Pack, pubkey::Pubkey};
 use solana_program_test::{
     processor, tokio, ProgramTest, ProgramTestBanksClientExt, ProgramTestContext,
 };
 
-use solana_program::hash::hashv;
-use solana_sdk::{
+use solomka_program::hash::hashv;
+use solomka_sdk::{
     signature::{Keypair, Signer},
     transaction::Transaction,
     transport::TransportError,

@@ -2,7 +2,7 @@
 
 mod program_test;
 
-use solana_program::pubkey::Pubkey;
+use solomka_program::pubkey::Pubkey;
 use solana_program_test::tokio;
 
 use program_test::*;

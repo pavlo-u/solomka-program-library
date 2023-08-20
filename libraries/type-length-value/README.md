@@ -48,7 +48,7 @@ impl TlvDiscriminator for MyOtherPodValue {
 let account_size = TlvState::get_base_len() + std::mem::size_of::<MyPodValue>() + \
     TlvState::get_base_len() + std::mem::size_of::<MyOtherPodValue>();
 
-// Buffer likely comes from a Solana `solana_program::account_info::AccountInfo`,
+// Buffer likely comes from a Solana `solomka_program::account_info::AccountInfo`,
 // but this example just uses a vector.
 let mut buffer = vec![0; account_size];
 
@@ -131,7 +131,7 @@ let initial_data = "This is a pretty cool test!";
 let tlv_size = 4 + initial_data.len();
 let account_size = TlvState::get_base_len() + tlv_size;
 
-// Buffer likely comes from a Solana `solana_program::account_info::AccountInfo`,
+// Buffer likely comes from a Solana `solomka_program::account_info::AccountInfo`,
 // but this example just uses a vector.
 let mut buffer = vec![0; account_size];
 let mut state = TlvStateMut::unpack(&mut buffer).unwrap();

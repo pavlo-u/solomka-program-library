@@ -770,12 +770,12 @@ dependencies = [
  "solana-frozen-abi",
  "solana-frozen-abi-macro",
  "solana-logger",
- "solana-sdk-macro",
+ "solomka-sdk-macro",
  "thiserror",
 ]
 
 [[package]]
-name = "solana-sdk-macro"
+name = "solomka-sdk-macro"
 version = "1.7.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "64e988d7938720ca3090cc02caafa7952a98e28d153c5ecc7661208d5adfd520"

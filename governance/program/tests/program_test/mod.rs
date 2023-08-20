@@ -2,7 +2,7 @@
 use std::str::FromStr;
 
 use borsh::BorshSerialize;
-use solana_program::{
+use solomka_program::{
     bpf_loader_upgradeable::{self, UpgradeableLoaderState},
     clock::{Slot, UnixTimestamp},
     instruction::{AccountMeta, Instruction},
@@ -14,7 +14,7 @@ use solana_program::{
 
 use solana_program_test::*;
 
-use solana_sdk::signature::{Keypair, Signer};
+use solomka_sdk::signature::{Keypair, Signer};
 
 use spl_governance::{
     instruction::{

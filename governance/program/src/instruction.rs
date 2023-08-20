@@ -25,7 +25,7 @@ use crate::{
     tools::bpf_loader_upgradeable::get_program_data_address,
 };
 use borsh::{BorshDeserialize, BorshSchema, BorshSerialize};
-use solana_program::{
+use solomka_program::{
     bpf_loader_upgradeable,
     instruction::{AccountMeta, Instruction},
     pubkey::Pubkey,

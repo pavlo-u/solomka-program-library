@@ -10,7 +10,7 @@ use {
         processor::Processor,
         state::{Account, Mint},
     },
-    solana_program::{
+    solomka_program::{
         account_info::{next_account_info, AccountInfo},
         entrypoint::ProgramResult,
         msg,
@@ -28,9 +28,9 @@ use {
 #[cfg(feature = "proof-program")]
 use {
     crate::extension::memo_transfer::{check_previous_sibling_instruction_is_memo, memo_required},
-    solana_program::instruction::Instruction,
-    solana_program::sysvar::instructions::get_instruction_relative,
-    solana_program::{clock::Clock, sysvar::Sysvar},
+    solomka_program::instruction::Instruction,
+    solomka_program::sysvar::instructions::get_instruction_relative,
+    solomka_program::{clock::Clock, sysvar::Sysvar},
     solana_zk_token_sdk::zk_token_proof_program,
 };
 

@@ -5,13 +5,13 @@ mod helpers;
 
 use helpers::*;
 use solana_program_test::*;
-use solana_sdk::{
+use solomka_sdk::{
     account::Account,
     signature::{Keypair, Signer},
     system_instruction::create_account,
     transaction::Transaction,
 };
-use spl_token::{instruction::approve, solana_program::program_pack::Pack};
+use spl_token::{instruction::approve, solomka_program::program_pack::Pack};
 use spl_token_lending::{
     instruction::{
         borrow_obligation_liquidity, deposit_obligation_collateral, init_obligation,

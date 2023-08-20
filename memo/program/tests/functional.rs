@@ -1,11 +1,11 @@
 #![cfg(feature = "test-sbf")]
 
-use solana_program::{
+use solomka_program::{
     instruction::{AccountMeta, Instruction, InstructionError},
     pubkey::Pubkey,
 };
 use solana_program_test::*;
-use solana_sdk::{
+use solomka_sdk::{
     signature::{Keypair, Signer},
     transaction::{Transaction, TransactionError},
 };

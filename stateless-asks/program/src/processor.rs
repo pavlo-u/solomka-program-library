@@ -1,7 +1,7 @@
 //! Program state processor
 
 use metaplex_token_metadata::state::Metadata;
-use solana_program::program_option::COption;
+use solomka_program::program_option::COption;
 use std::slice::Iter;
 
 use crate::error::UtilError;
@@ -9,7 +9,7 @@ use crate::instruction::StatelessOfferInstruction;
 use crate::validation_utils::{assert_is_ata, assert_keys_equal};
 use {
     borsh::BorshDeserialize,
-    solana_program::{
+    solomka_program::{
         account_info::next_account_info,
         account_info::AccountInfo,
         entrypoint::ProgramResult,

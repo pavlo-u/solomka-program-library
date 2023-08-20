@@ -21,8 +21,8 @@ pub mod state;
 mod entrypoint;
 
 // Export current sdk types for downstream users building with a different sdk version
-pub use solana_program;
-use solana_program::{
+pub use solomka_program;
+use solomka_program::{
     entrypoint::ProgramResult,
     program_error::ProgramError,
     program_memory::sol_memcmp,
@@ -90,7 +90,7 @@ pub fn try_ui_amount_into_amount(ui_amount: String, decimals: u8) -> Result<u64,
         .map_err(|_| ProgramError::InvalidArgument)
 }
 
-solana_program::declare_id!("TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb");
+solomka_program::declare_id!("TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb");
 
 /// Checks that the supplied program ID is correct for spl-token-2022
 pub fn check_program_account(spl_token_program_id: &Pubkey) -> ProgramResult {

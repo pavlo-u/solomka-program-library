@@ -9,7 +9,7 @@ use {
     },
     borsh::{BorshDeserialize, BorshSerialize},
     mpl_token_metadata::pda::find_metadata_account,
-    solana_program::{
+    solomka_program::{
         instruction::{AccountMeta, Instruction},
         program_pack::Pack,
         pubkey::Pubkey,

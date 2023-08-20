@@ -7,7 +7,7 @@ use {
         tokio::{self, sync::Mutex},
         ProgramTest, ProgramTestContext,
     },
-    solana_sdk::{
+    solomka_sdk::{
         account_info::AccountInfo,
         entrypoint::ProgramResult,
         instruction::{AccountMeta, InstructionError},

@@ -4,7 +4,7 @@ use crate::{
     error::LendingError,
     state::{ReserveConfig, ReserveFees},
 };
-use solana_program::{
+use solomka_program::{
     instruction::{AccountMeta, Instruction},
     msg,
     program_error::ProgramError,

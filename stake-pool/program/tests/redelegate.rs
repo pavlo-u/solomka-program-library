@@ -6,11 +6,11 @@ mod helpers;
 use {
     bincode::deserialize,
     helpers::*,
-    solana_program::{
+    solomka_program::{
         clock::Epoch, hash::Hash, instruction::InstructionError, pubkey::Pubkey, stake,
     },
     solana_program_test::*,
-    solana_sdk::{
+    solomka_sdk::{
         signature::{Keypair, Signer},
         stake::instruction::StakeError,
         transaction::{Transaction, TransactionError},

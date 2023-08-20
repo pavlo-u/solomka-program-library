@@ -5,9 +5,9 @@ mod program_test;
 
 use {
     program_test::program_test_2022,
-    solana_program::{instruction::*, pubkey::Pubkey, system_instruction},
+    solomka_program::{instruction::*, pubkey::Pubkey, system_instruction},
     solana_program_test::*,
-    solana_sdk::{
+    solomka_sdk::{
         signature::Signer,
         signer::keypair::Keypair,
         transaction::{Transaction, TransactionError},

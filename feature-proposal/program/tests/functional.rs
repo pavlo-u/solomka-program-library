@@ -2,13 +2,13 @@
 #![cfg(feature = "test-sbf")]
 
 use {
-    solana_program::{
+    solomka_program::{
         feature::{self, Feature},
         program_option::COption,
         system_program,
     },
     solana_program_test::*,
-    solana_sdk::{
+    solomka_sdk::{
         signature::{Keypair, Signer},
         transaction::Transaction,
     },

@@ -14,7 +14,7 @@ use crate::{
         structs::Reserved120,
     },
 };
-use solana_program::{
+use solomka_program::{
     account_info::{next_account_info, AccountInfo},
     entrypoint::ProgramResult,
     program_pack::Pack,

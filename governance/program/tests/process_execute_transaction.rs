@@ -2,7 +2,7 @@
 
 mod program_test;
 
-use solana_program::{
+use solomka_program::{
     instruction::{AccountMeta, Instruction},
     program_error::ProgramError,
     sysvar::clock,

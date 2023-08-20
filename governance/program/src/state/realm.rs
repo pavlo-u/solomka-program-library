@@ -4,7 +4,7 @@ use borsh::maybestd::io::Write;
 use std::slice::Iter;
 
 use borsh::{BorshDeserialize, BorshSchema, BorshSerialize};
-use solana_program::{
+use solomka_program::{
     account_info::{next_account_info, AccountInfo},
     program_error::ProgramError,
     program_pack::IsInitialized,
@@ -457,7 +457,7 @@ pub fn assert_valid_realm_config_args(
 mod test {
 
     use crate::instruction::GovernanceInstruction;
-    use solana_program::borsh::try_from_slice_unchecked;
+    use solomka_program::borsh::try_from_slice_unchecked;
 
     use super::*;
 

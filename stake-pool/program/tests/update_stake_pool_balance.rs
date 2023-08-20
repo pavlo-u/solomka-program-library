@@ -5,11 +5,11 @@ mod helpers;
 
 use {
     helpers::*,
-    solana_program::{
+    solomka_program::{
         borsh::try_from_slice_unchecked, instruction::InstructionError, pubkey::Pubkey,
     },
     solana_program_test::*,
-    solana_sdk::{
+    solomka_sdk::{
         hash::Hash,
         signature::{Keypair, Signer},
         stake,

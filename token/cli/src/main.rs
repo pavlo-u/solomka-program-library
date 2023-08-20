@@ -27,7 +27,7 @@ use solana_cli_output::{
 };
 use solana_client::rpc_request::TokenAccountsFilter;
 use solana_remote_wallet::remote_wallet::RemoteWalletManager;
-use solana_sdk::{
+use solomka_sdk::{
     native_token::*,
     program_option::COption,
     pubkey::Pubkey,
@@ -4384,7 +4384,7 @@ mod tests {
     use {
         super::*,
         serial_test::serial,
-        solana_sdk::{
+        solomka_sdk::{
             bpf_loader,
             hash::Hash,
             program_pack::Pack,
@@ -4490,7 +4490,7 @@ mod tests {
 
         let nonce_rent = config
             .rpc_client
-            .get_minimum_balance_for_rent_exemption(solana_sdk::nonce::State::size())
+            .get_minimum_balance_for_rent_exemption(solomka_sdk::nonce::State::size())
             .await
             .unwrap();
         let instr = system_instruction::create_nonce_account(

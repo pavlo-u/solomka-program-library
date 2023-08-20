@@ -15,7 +15,7 @@ use spl_token_swap::{
 
 use spl_token::instruction::approve;
 
-use solana_program::{bpf_loader, entrypoint::ProgramResult, pubkey::Pubkey, system_program};
+use solomka_program::{bpf_loader, entrypoint::ProgramResult, pubkey::Pubkey, system_program};
 
 pub struct NativeTokenSwap {
     pub user_account: NativeAccountData,

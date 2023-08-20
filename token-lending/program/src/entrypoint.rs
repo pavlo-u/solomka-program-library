@@ -3,7 +3,7 @@
 #![cfg(all(target_os = "solana", not(feature = "no-entrypoint")))]
 
 use crate::{error::LendingError, processor};
-use solana_program::{
+use solomka_program::{
     account_info::AccountInfo, entrypoint, entrypoint::ProgramResult,
     program_error::PrintProgramError, pubkey::Pubkey,
 };

@@ -12,7 +12,7 @@ use crate::{
     tools::structs::Reserved120,
 };
 use borsh::{BorshDeserialize, BorshSchema, BorshSerialize};
-use solana_program::{
+use solomka_program::{
     account_info::AccountInfo, program_error::ProgramError, program_pack::IsInitialized,
     pubkey::Pubkey, rent::Rent,
 };
@@ -622,7 +622,7 @@ pub fn assert_is_valid_vote_threshold(vote_threshold: &VoteThreshold) -> Result<
 
 #[cfg(test)]
 mod test {
-    use solana_program::clock::Epoch;
+    use solomka_program::clock::Epoch;
 
     use super::*;
 

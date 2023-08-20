@@ -6,21 +6,21 @@ use {
         extension::{transfer_hook, StateWithExtensions},
         state::Mint,
     },
-    solana_program::{instruction::AccountMeta, program_error::ProgramError, pubkey::Pubkey},
+    solomka_program::{instruction::AccountMeta, program_error::ProgramError, pubkey::Pubkey},
     spl_transfer_hook_interface::offchain::get_extra_account_metas,
     std::future::Future,
 };
 
 /// Offchain helper to get all additional required account metas for a checked transfer
 ///
-/// To be client-agnostic and to avoid pulling in the full solana-sdk, this
+/// To be client-agnostic and to avoid pulling in the full solomka-sdk, this
 /// simply takes a function that will return its data as `Future<Vec<u8>>` for
 /// the given address. Can be called in the following way:
 ///
 /// ```rust,ignore
 /// use futures_util::TryFutureExt;
 /// use solana_client::nonblocking::rpc_client::RpcClient;
-/// use solana_program::pubkey::Pubkey;
+/// use solomka_program::pubkey::Pubkey;
 ///
 /// let mint = Pubkey::new_unique();
 /// let client = RpcClient::new_mock("succeeds".to_string());

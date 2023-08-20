@@ -1,7 +1,7 @@
 //! State helpers for working with the example program
 
 use {
-    solana_program::{instruction::AccountMeta, program_error::ProgramError},
+    solomka_program::{instruction::AccountMeta, program_error::ProgramError},
     spl_tlv_account_resolution::state::ExtraAccountMetas,
     spl_transfer_hook_interface::instruction::ExecuteInstruction,
 };

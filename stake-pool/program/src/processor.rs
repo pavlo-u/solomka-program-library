@@ -21,7 +21,7 @@ use {
         state::DataV2,
     },
     num_traits::FromPrimitive,
-    solana_program::{
+    solomka_program::{
         account_info::{next_account_info, AccountInfo},
         borsh::try_from_slice_unchecked,
         clock::{Clock, Epoch},
@@ -699,7 +699,7 @@ impl Processor {
         destination: AccountInfo<'a>,
         amount: u64,
     ) -> Result<(), ProgramError> {
-        let ix = solana_program::system_instruction::transfer(source.key, destination.key, amount);
+        let ix = solomka_program::system_instruction::transfer(source.key, destination.key, amount);
         invoke(&ix, &[source, destination])
     }
 

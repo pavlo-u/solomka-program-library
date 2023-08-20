@@ -8,9 +8,9 @@ use {
         state::{MAX_NAME_LENGTH, MAX_SYMBOL_LENGTH, MAX_URI_LENGTH},
         utils::puffed_out_string,
     },
-    solana_program::instruction::InstructionError,
+    solomka_program::instruction::InstructionError,
     solana_program_test::*,
-    solana_sdk::{
+    solomka_sdk::{
         signature::{Keypair, Signer},
         transaction::{Transaction, TransactionError},
     },

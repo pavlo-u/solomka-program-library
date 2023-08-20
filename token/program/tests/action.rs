@@ -1,6 +1,6 @@
 use {
     solana_program_test::BanksClient,
-    solana_sdk::{
+    solomka_sdk::{
         hash::Hash,
         program_pack::Pack,
         pubkey::Pubkey,

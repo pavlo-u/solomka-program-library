@@ -2,7 +2,7 @@
 
 use {
     borsh::BorshSerialize,
-    solana_program::{
+    solomka_program::{
         borsh::get_packed_len,
         instruction::{AccountMeta, Instruction, InstructionError},
         pubkey::Pubkey,
@@ -10,7 +10,7 @@ use {
         system_instruction,
     },
     solana_program_test::*,
-    solana_sdk::{
+    solomka_sdk::{
         signature::{Keypair, Signer},
         transaction::{Transaction, TransactionError},
     },

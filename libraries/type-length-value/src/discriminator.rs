@@ -4,7 +4,7 @@
 
 use {
     bytemuck::{Pod, Zeroable},
-    solana_program::program_error::ProgramError,
+    solomka_program::program_error::ProgramError,
 };
 
 /// Trait to be implemented by all value types in the TLV structure, specifying

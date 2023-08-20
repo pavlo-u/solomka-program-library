@@ -62,7 +62,7 @@ use process_sign_off_proposal::*;
 use process_update_program_metadata::*;
 use process_withdraw_governing_tokens::*;
 
-use solana_program::{
+use solomka_program::{
     account_info::AccountInfo, borsh::try_from_slice_unchecked, entrypoint::ProgramResult, msg,
     program_error::ProgramError, pubkey::Pubkey,
 };

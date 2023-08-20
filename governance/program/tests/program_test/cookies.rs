@@ -1,5 +1,5 @@
-use solana_program::{instruction::Instruction, pubkey::Pubkey};
-use solana_sdk::signature::Keypair;
+use solomka_program::{instruction::Instruction, pubkey::Pubkey};
+use solomka_sdk::signature::Keypair;
 use spl_governance::state::{
     governance::GovernanceV2, native_treasury::NativeTreasury, program_metadata::ProgramMetadata,
     proposal::ProposalV2, proposal_deposit::ProposalDeposit,

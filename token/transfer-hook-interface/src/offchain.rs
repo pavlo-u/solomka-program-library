@@ -2,7 +2,7 @@
 
 use {
     crate::{get_extra_account_metas_address, instruction::ExecuteInstruction},
-    solana_program::{instruction::AccountMeta, program_error::ProgramError, pubkey::Pubkey},
+    solomka_program::{instruction::AccountMeta, program_error::ProgramError, pubkey::Pubkey},
     spl_tlv_account_resolution::state::ExtraAccountMetas,
     std::future::Future,
 };
@@ -15,14 +15,14 @@ pub type AccountFetchError = Box<dyn std::error::Error + Send + Sync>;
 
 /// Offchain helper to get all additional required account metas for a mint
 ///
-/// To be client-agnostic and to avoid pulling in the full solana-sdk, this
+/// To be client-agnostic and to avoid pulling in the full solomka-sdk, this
 /// simply takes a function that will return its data as `Future<Vec<u8>>` for
 /// the given address. Can be called in the following way:
 ///
 /// ```rust,ignore
 /// use futures_util::TryFutureExt;
 /// use solana_client::nonblocking::rpc_client::RpcClient;
-/// use solana_program::pubkey::Pubkey;
+/// use solomka_program::pubkey::Pubkey;
 ///
 /// let program_id = Pubkey::new_unique();
 /// let mint = Pubkey::new_unique();

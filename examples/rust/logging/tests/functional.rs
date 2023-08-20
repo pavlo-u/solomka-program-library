@@ -1,10 +1,10 @@
 use {
-    solana_program::{
+    solomka_program::{
         instruction::{AccountMeta, Instruction},
         pubkey::Pubkey,
     },
     solana_program_test::*,
-    solana_sdk::{signature::Signer, transaction::Transaction},
+    solomka_sdk::{signature::Signer, transaction::Transaction},
     spl_example_logging::processor::process_instruction,
     std::str::FromStr,
 };

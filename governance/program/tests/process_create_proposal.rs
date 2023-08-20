@@ -1,12 +1,12 @@
 #![cfg(feature = "test-sbf")]
 
-use solana_program::{instruction::AccountMeta, pubkey::Pubkey};
+use solomka_program::{instruction::AccountMeta, pubkey::Pubkey};
 use solana_program_test::*;
 
 mod program_test;
 
 use program_test::*;
-use solana_sdk::signature::Keypair;
+use solomka_sdk::signature::Keypair;
 use spl_governance::{
     error::GovernanceError,
     state::{enums::VoteThreshold, governance::SECURITY_DEPOSIT_BASE_LAMPORTS},

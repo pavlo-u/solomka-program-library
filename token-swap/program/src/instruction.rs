@@ -4,7 +4,7 @@
 
 use crate::curve::{base::SwapCurve, fees::Fees};
 use crate::error::SwapError;
-use solana_program::{
+use solomka_program::{
     instruction::{AccountMeta, Instruction},
     program_error::ProgramError,
     program_pack::Pack,

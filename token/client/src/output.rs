@@ -18,7 +18,7 @@ impl fmt::Display for RpcClientResponse {
 mod tests {
     use {
         super::*,
-        solana_sdk::{
+        solomka_sdk::{
             hash::Hash,
             pubkey::Pubkey,
             signature::{Signature, Signer, SIGNATURE_BYTES},

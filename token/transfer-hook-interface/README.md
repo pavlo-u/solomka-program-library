@@ -8,7 +8,7 @@ program-derived address defined by the interface.
 
 ```rust
 use {
-    solana_program::{entrypoint::ProgramResult, program_error::ProgramError},
+    solomka_program::{entrypoint::ProgramResult, program_error::ProgramError},
     spl_tlv_account_resolution::state::ExtraAccountMetas,
     spl_transfer_hook_interface::instruction::{ExecuteInstruction, TransferHookInstruction},
     spl_type_length_value::state::TlvStateBorrowed,

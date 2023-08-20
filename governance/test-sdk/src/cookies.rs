@@ -1,5 +1,5 @@
-use solana_program::pubkey::Pubkey;
-use solana_sdk::account::Account;
+use solomka_program::pubkey::Pubkey;
+use solomka_sdk::account::Account;
 
 #[derive(Debug)]
 pub struct TokenAccountCookie {

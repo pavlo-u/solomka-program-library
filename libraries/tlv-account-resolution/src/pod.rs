@@ -3,7 +3,7 @@
 use {
     crate::error::AccountResolutionError,
     bytemuck::{Pod, Zeroable},
-    solana_program::{
+    solomka_program::{
         account_info::AccountInfo, instruction::AccountMeta, program_error::ProgramError,
         pubkey::Pubkey,
     },

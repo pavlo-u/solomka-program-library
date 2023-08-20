@@ -2,7 +2,7 @@
 
 use {
     bytemuck::{Pod, Zeroable},
-    solana_program::program_error::ProgramError,
+    solomka_program::program_error::ProgramError,
 };
 
 /// Convert a slice into a `Pod` (zero copy)

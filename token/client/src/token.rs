@@ -2,7 +2,7 @@ use {
     crate::client::{ProgramClient, ProgramClientError, SendTransaction},
     futures_util::TryFutureExt,
     solana_program_test::tokio::time,
-    solana_sdk::{
+    solomka_sdk::{
         account::Account as BaseAccount,
         hash::Hash,
         instruction::{AccountMeta, Instruction},
@@ -38,7 +38,7 @@ use {
 };
 #[cfg(feature = "proof-program")]
 use {
-    solana_sdk::epoch_info::EpochInfo,
+    solomka_sdk::epoch_info::EpochInfo,
     spl_token_2022::solana_zk_token_sdk::{
         encryption::{auth_encryption::*, elgamal::*},
         instruction::transfer_with_fee::FeeParameters,

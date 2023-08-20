@@ -5,7 +5,7 @@
 
 use {
     arrayref::{array_ref, array_refs},
-    solana_program::{program_error::ProgramError, program_option::COption, pubkey::Pubkey},
+    solomka_program::{program_error::ProgramError, program_option::COption, pubkey::Pubkey},
 };
 
 fn unpack_coption_key(src: &[u8; 36]) -> Result<COption<Pubkey>, ProgramError> {

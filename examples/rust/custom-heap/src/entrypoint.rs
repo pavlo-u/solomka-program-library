@@ -2,7 +2,7 @@
 
 #![cfg(not(feature = "no-entrypoint"))]
 
-use solana_program::{
+use solomka_program::{
     account_info::AccountInfo,
     entrypoint,
     entrypoint::{ProgramResult, HEAP_LENGTH, HEAP_START_ADDRESS},

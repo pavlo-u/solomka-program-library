@@ -4,9 +4,9 @@
 mod helpers;
 
 use helpers::*;
-use solana_program::instruction::{AccountMeta, Instruction};
+use solomka_program::instruction::{AccountMeta, Instruction};
 use solana_program_test::*;
-use solana_sdk::{
+use solomka_sdk::{
     instruction::InstructionError,
     pubkey::Pubkey,
     signature::{Keypair, Signer},

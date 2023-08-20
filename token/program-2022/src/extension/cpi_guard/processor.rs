@@ -10,7 +10,7 @@ use {
         processor::Processor,
         state::Account,
     },
-    solana_program::{
+    solomka_program::{
         account_info::{next_account_info, AccountInfo},
         entrypoint::ProgramResult,
         msg,

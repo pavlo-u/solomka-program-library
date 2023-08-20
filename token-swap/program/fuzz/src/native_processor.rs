@@ -1,6 +1,6 @@
 use crate::native_account_data::NativeAccountData;
 
-use solana_program::{
+use solomka_program::{
     account_info::AccountInfo, entrypoint::ProgramResult, instruction::Instruction,
     program_error::ProgramError, program_stubs, pubkey::Pubkey,
 };

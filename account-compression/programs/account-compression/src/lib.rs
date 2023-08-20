@@ -24,7 +24,7 @@
 
 use anchor_lang::{
     prelude::*,
-    solana_program::sysvar::{clock::Clock, rent::Rent},
+    solomka_program::sysvar::{clock::Clock, rent::Rent},
 };
 use borsh::{BorshDeserialize, BorshSerialize};
 

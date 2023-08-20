@@ -8,7 +8,7 @@ use {
     borsh::{BorshDeserialize, BorshSchema, BorshSerialize},
     num_derive::FromPrimitive,
     num_traits::FromPrimitive,
-    solana_program::{
+    solomka_program::{
         account_info::AccountInfo,
         borsh::get_instance_packed_len,
         msg,
@@ -978,7 +978,7 @@ mod test {
     use {
         super::*,
         proptest::prelude::*,
-        solana_program::{
+        solomka_program::{
             borsh::{get_instance_packed_len, get_packed_len, try_from_slice_unchecked},
             clock::{DEFAULT_SLOTS_PER_EPOCH, DEFAULT_S_PER_SLOT, SECONDS_PER_DAY},
             native_token::LAMPORTS_PER_SOL,

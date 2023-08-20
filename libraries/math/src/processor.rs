@@ -8,7 +8,7 @@ use {
         precise_number::PreciseNumber,
     },
     borsh::BorshDeserialize,
-    solana_program::{
+    solomka_program::{
         account_info::AccountInfo, entrypoint::ProgramResult, log::sol_log_compute_units, msg,
         pubkey::Pubkey,
     },

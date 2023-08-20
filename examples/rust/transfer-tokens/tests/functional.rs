@@ -1,5 +1,5 @@
 use {
-    solana_program::{
+    solomka_program::{
         instruction::{AccountMeta, Instruction},
         program_pack::Pack,
         pubkey::Pubkey,
@@ -7,7 +7,7 @@ use {
         system_instruction,
     },
     solana_program_test::{processor, tokio, ProgramTest},
-    solana_sdk::{signature::Signer, signer::keypair::Keypair, transaction::Transaction},
+    solomka_sdk::{signature::Signer, signer::keypair::Keypair, transaction::Transaction},
     spl_example_transfer_tokens::processor::process_instruction,
     spl_token::state::{Account, Mint},
     std::str::FromStr,

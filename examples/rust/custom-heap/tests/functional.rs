@@ -1,7 +1,7 @@
 use {
-    solana_program::{instruction::Instruction, pubkey::Pubkey},
+    solomka_program::{instruction::Instruction, pubkey::Pubkey},
     solana_program_test::*,
-    solana_sdk::{signature::Signer, transaction::Transaction},
+    solomka_sdk::{signature::Signer, transaction::Transaction},
     spl_example_custom_heap::processor::process_instruction,
     std::str::FromStr,
 };

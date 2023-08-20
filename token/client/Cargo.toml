@@ -13,7 +13,7 @@ futures-util = "0.3"
 solana-cli-output = { version = "=1.14.12", optional = true }
 solana-client = "=1.14.12"
 solana-program-test = "=1.14.12"
-solana-sdk = "=1.14.12"
+solomka-sdk = "=1.14.12"
 # We never want the entrypoint for ATA, but we want the entrypoint for token when
 # testing token
 spl-associated-token-account = { version = "1.1", path = "../../associated-token-account/program", features = ["no-entrypoint"] }

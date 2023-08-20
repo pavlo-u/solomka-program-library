@@ -2,14 +2,14 @@
 #![cfg(feature = "test-sbf")]
 
 use {
-    solana_program::{
+    solomka_program::{
         instruction::{AccountMeta, Instruction},
         pubkey::Pubkey,
         rent::Rent,
         system_program,
     },
     solana_program_test::*,
-    solana_sdk::{account::Account, signature::Signer, transaction::Transaction},
+    solomka_sdk::{account::Account, signature::Signer, transaction::Transaction},
     spl_example_cross_program_invocation::processor::{process_instruction, SIZE},
     std::str::FromStr,
 };

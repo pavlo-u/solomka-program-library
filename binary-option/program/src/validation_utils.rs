@@ -1,6 +1,6 @@
 use {
     crate::error::BinaryOptionError,
-    solana_program::{
+    solomka_program::{
         account_info::AccountInfo,
         entrypoint::ProgramResult,
         program_error::ProgramError,

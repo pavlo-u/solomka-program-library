@@ -1,5 +1,5 @@
 use {
-    solana_program::{
+    solomka_program::{
         account_info::AccountInfo,
         entrypoint::ProgramResult,
         msg,

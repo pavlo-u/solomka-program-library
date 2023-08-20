@@ -12,7 +12,7 @@ use {
     },
     borsh::{BorshDeserialize, BorshSchema, BorshSerialize},
     mpl_token_metadata::pda::find_metadata_account,
-    solana_program::{
+    solomka_program::{
         instruction::{AccountMeta, Instruction},
         pubkey::Pubkey,
         stake, system_program, sysvar,
@@ -80,7 +80,7 @@ pub enum StakePoolInstruction {
     ///   list of managed validators.
     ///
     ///   The stake account will have the rent-exempt amount plus
-    ///   `max(crate::MINIMUM_ACTIVE_STAKE, solana_program::stake::tools::get_minimum_delegation())`.
+    ///   `max(crate::MINIMUM_ACTIVE_STAKE, solomka_program::stake::tools::get_minimum_delegation())`.
     ///   It is funded from the stake pool reserve.
     ///
     ///   0. `[w]` Stake pool
@@ -104,7 +104,7 @@ pub enum StakePoolInstruction {
     ///   (Staker only) Removes validator from the pool, deactivating its stake
     ///
     ///   Only succeeds if the validator stake account has the minimum of
-    ///   `max(crate::MINIMUM_ACTIVE_STAKE, solana_program::stake::tools::get_minimum_delegation())`.
+    ///   `max(crate::MINIMUM_ACTIVE_STAKE, solomka_program::stake::tools::get_minimum_delegation())`.
     ///   plus the rent-exempt amount.
     ///
     ///   0. `[w]` Stake pool
@@ -129,7 +129,7 @@ pub enum StakePoolInstruction {
     ///
     /// The instruction only succeeds if the transient stake account does not
     /// exist. The amount of lamports to move must be at least rent-exemption plus
-    /// `max(crate::MINIMUM_ACTIVE_STAKE, solana_program::stake::tools::get_minimum_delegation())`.
+    /// `max(crate::MINIMUM_ACTIVE_STAKE, solomka_program::stake::tools::get_minimum_delegation())`.
     ///
     ///  0. `[]` Stake pool
     ///  1. `[s]` Stake pool staker
@@ -156,7 +156,7 @@ pub enum StakePoolInstruction {
     ///
     /// This instruction only succeeds if the transient stake account does not exist.
     /// The minimum amount to move is rent-exemption plus
-    /// `max(crate::MINIMUM_ACTIVE_STAKE, solana_program::stake::tools::get_minimum_delegation())`.
+    /// `max(crate::MINIMUM_ACTIVE_STAKE, solomka_program::stake::tools::get_minimum_delegation())`.
     ///
     ///  0. `[]` Stake pool
     ///  1. `[s]` Stake pool staker
@@ -272,7 +272,7 @@ pub enum StakePoolInstruction {
     ///   Succeeds if the stake account has enough SOL to cover the desired amount
     ///   of pool tokens, and if the withdrawal keeps the total staked amount
     ///   above the minimum of rent-exempt amount +
-    ///   `max(crate::MINIMUM_ACTIVE_STAKE, solana_program::stake::tools::get_minimum_delegation())`.
+    ///   `max(crate::MINIMUM_ACTIVE_STAKE, solomka_program::stake::tools::get_minimum_delegation())`.
     ///
     ///   When allowing withdrawals, the order of priority goes:
     ///
@@ -412,7 +412,7 @@ pub enum StakePoolInstruction {
     /// will do the work of merging once it's ready.
     ///
     /// The minimum amount to move is rent-exemption plus
-    /// `max(crate::MINIMUM_ACTIVE_STAKE, solana_program::stake::tools::get_minimum_delegation())`.
+    /// `max(crate::MINIMUM_ACTIVE_STAKE, solomka_program::stake::tools::get_minimum_delegation())`.
     ///
     ///  0. `[]` Stake pool
     ///  1. `[s]` Stake pool staker
@@ -451,7 +451,7 @@ pub enum StakePoolInstruction {
     /// the transient stake account delegated to the appropriate validator.
     ///
     ///  The amount of lamports to move must be at least rent-exemption plus
-    /// `max(crate::MINIMUM_ACTIVE_STAKE, solana_program::stake::tools::get_minimum_delegation())`.
+    /// `max(crate::MINIMUM_ACTIVE_STAKE, solomka_program::stake::tools::get_minimum_delegation())`.
     ///
     ///  0. `[]` Stake pool
     ///  1. `[s]` Stake pool staker
@@ -562,7 +562,7 @@ pub enum StakePoolInstruction {
     ///   Succeeds if the stake account has enough SOL to cover the desired amount
     ///   of pool tokens, and if the withdrawal keeps the total staked amount
     ///   above the minimum of rent-exempt amount +
-    ///   `max(crate::MINIMUM_ACTIVE_STAKE, solana_program::stake::tools::get_minimum_delegation())`.
+    ///   `max(crate::MINIMUM_ACTIVE_STAKE, solomka_program::stake::tools::get_minimum_delegation())`.
     ///
     ///   0. `[w]` Stake pool
     ///   1. `[w]` Validator stake list storage account

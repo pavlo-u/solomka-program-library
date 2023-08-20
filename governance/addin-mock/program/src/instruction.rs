@@ -1,7 +1,7 @@
 //! Program instructions
 
 use borsh::{BorshDeserialize, BorshSchema, BorshSerialize};
-use solana_program::{
+use solomka_program::{
     clock::Slot,
     instruction::{AccountMeta, Instruction},
     pubkey::Pubkey,

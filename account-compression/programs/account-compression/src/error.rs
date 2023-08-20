@@ -1,6 +1,6 @@
 use anchor_lang::{
     prelude::*,
-    solana_program::{msg, program_error::ProgramError},
+    solomka_program::{msg, program_error::ProgramError},
 };
 use bytemuck::PodCastError;
 use spl_concurrent_merkle_tree::error::ConcurrentMerkleTreeError;

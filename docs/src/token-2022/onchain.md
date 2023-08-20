@@ -678,7 +678,7 @@ the desired type, and properly handle the valid error case.
 Roughly speaking that means changing the amount traded before calculation:
 
 ```rust
-use solana_program::{clock::Clock, sysvar::Sysvar};
+use solomka_program::{clock::Clock, sysvar::Sysvar};
 use spl_token_2022::{extension::{StateWithExtensions, transfer_fee::TransferFeeConfig}, state::Mint};
 
 let mint_data = token_mint_info.data.borrow();

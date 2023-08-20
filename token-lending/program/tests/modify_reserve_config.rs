@@ -4,9 +4,9 @@
 mod helpers;
 
 use helpers::*;
-use solana_program::pubkey::Pubkey;
+use solomka_program::pubkey::Pubkey;
 use solana_program_test::*;
-use solana_sdk::{
+use solomka_sdk::{
     instruction::InstructionError,
     signature::{read_keypair_file, Keypair, Signer},
     transaction::{Transaction, TransactionError},

@@ -1,6 +1,6 @@
 use {
     crate::{check_program_account, error::TokenError, instruction::TokenInstruction},
-    solana_program::{
+    solomka_program::{
         instruction::{AccountMeta, Instruction},
         program_error::ProgramError,
         program_option::COption,

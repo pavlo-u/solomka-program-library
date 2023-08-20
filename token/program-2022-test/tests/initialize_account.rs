@@ -4,7 +4,7 @@ mod program_test;
 use {
     program_test::TestContext,
     solana_program_test::tokio,
-    solana_sdk::{
+    solomka_sdk::{
         instruction::InstructionError,
         program_pack::Pack,
         pubkey::Pubkey,

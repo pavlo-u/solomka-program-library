@@ -1,7 +1,7 @@
 /**
  * @brief A program demonstrating cross program invocations
  */
-#include <solana_sdk.h>
+#include <solomka_sdk.h>
 
 /// Amount of bytes of account data to allocate
 #define SIZE 42

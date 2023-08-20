@@ -5,7 +5,7 @@ use crate::{
 use serde::{Deserialize, Serialize};
 use solana_account_decoder::{parse_token::TokenAccountType, UiAccountData};
 use solana_client::rpc_response::RpcKeyedAccount;
-use solana_sdk::pubkey::Pubkey;
+use solomka_sdk::pubkey::Pubkey;
 use spl_associated_token_account::get_associated_token_address_with_program_id;
 use std::{
     collections::{btree_map::Entry, BTreeMap},

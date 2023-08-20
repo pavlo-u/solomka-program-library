@@ -1,7 +1,7 @@
 //! General purpose account utility functions
 
 use borsh::{BorshDeserialize, BorshSerialize};
-use solana_program::{
+use solomka_program::{
     account_info::AccountInfo,
     borsh::try_from_slice_unchecked,
     msg,

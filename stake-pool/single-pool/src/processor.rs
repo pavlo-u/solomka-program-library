@@ -12,7 +12,7 @@ use {
         pda::find_metadata_account,
         state::DataV2,
     },
-    solana_program::{
+    solomka_program::{
         account_info::{next_account_info, AccountInfo},
         borsh::try_from_slice_unchecked,
         entrypoint::ProgramResult,

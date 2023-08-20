@@ -2,7 +2,7 @@
 
 use {
     num_enum::{IntoPrimitive, TryFromPrimitive},
-    solana_program::{
+    solomka_program::{
         instruction::{AccountMeta, Instruction},
         program_error::ProgramError,
         pubkey::Pubkey,

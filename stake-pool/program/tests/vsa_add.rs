@@ -7,7 +7,7 @@ use {
     bincode::deserialize,
     borsh::BorshSerialize,
     helpers::*,
-    solana_program::{
+    solomka_program::{
         borsh::try_from_slice_unchecked,
         hash::Hash,
         instruction::{AccountMeta, Instruction, InstructionError},
@@ -15,7 +15,7 @@ use {
         stake, system_program, sysvar,
     },
     solana_program_test::*,
-    solana_sdk::{
+    solomka_sdk::{
         signature::{Keypair, Signer},
         transaction::{Transaction, TransactionError},
         transport::TransportError,

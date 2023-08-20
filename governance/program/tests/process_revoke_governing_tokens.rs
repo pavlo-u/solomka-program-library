@@ -1,6 +1,6 @@
 #![cfg(feature = "test-sbf")]
 
-use solana_program::pubkey::Pubkey;
+use solomka_program::pubkey::Pubkey;
 use solana_program_test::*;
 
 mod program_test;
@@ -14,7 +14,7 @@ use spl_governance::{
 use spl_governance_test_sdk::tools::{clone_keypair, NopOverride};
 
 use crate::program_test::args::RealmSetupArgs;
-use solana_sdk::signature::{Keypair, Signer};
+use solomka_sdk::signature::{Keypair, Signer};
 
 #[tokio::test]
 async fn test_revoke_community_tokens() {

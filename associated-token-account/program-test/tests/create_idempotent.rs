@@ -4,9 +4,9 @@ mod program_test;
 
 use {
     program_test::program_test_2022,
-    solana_program::{instruction::*, pubkey::Pubkey},
+    solomka_program::{instruction::*, pubkey::Pubkey},
     solana_program_test::*,
-    solana_sdk::{
+    solomka_sdk::{
         account::Account as SolanaAccount,
         program_option::COption,
         program_pack::Pack,

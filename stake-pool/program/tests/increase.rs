@@ -6,9 +6,9 @@ mod helpers;
 use {
     bincode::deserialize,
     helpers::*,
-    solana_program::{clock::Epoch, instruction::InstructionError, pubkey::Pubkey, stake},
+    solomka_program::{clock::Epoch, instruction::InstructionError, pubkey::Pubkey, stake},
     solana_program_test::*,
-    solana_sdk::{
+    solomka_sdk::{
         signature::Signer,
         stake::instruction::StakeError,
         transaction::{Transaction, TransactionError},

@@ -1,6 +1,6 @@
 use {
     crate::instruction::{PadInstruction, WrapData},
-    solana_program::{
+    solomka_program::{
         account_info::AccountInfo,
         entrypoint::ProgramResult,
         instruction::{AccountMeta, Instruction},

@@ -1,7 +1,7 @@
 //! Solana program utilities for Plain Old Data types
 use {
     bytemuck::{Pod, Zeroable},
-    solana_program::{program_error::ProgramError, program_option::COption, pubkey::Pubkey},
+    solomka_program::{program_error::ProgramError, program_option::COption, pubkey::Pubkey},
     solana_zk_token_sdk::zk_token_elgamal::pod,
     std::convert::TryFrom,
 };

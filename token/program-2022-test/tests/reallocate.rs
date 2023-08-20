@@ -4,7 +4,7 @@ mod program_test;
 use {
     program_test::{TestContext, TokenContext},
     solana_program_test::tokio,
-    solana_sdk::{
+    solomka_sdk::{
         instruction::InstructionError, program_option::COption, pubkey::Pubkey, signature::Signer,
         signer::keypair::Keypair, transaction::TransactionError, transport::TransportError,
     },

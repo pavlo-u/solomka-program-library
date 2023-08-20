@@ -1,8 +1,8 @@
 use {
     serde::{Deserialize, Serialize},
     solana_cli_output::{QuietDisplay, VerboseDisplay},
-    solana_sdk::native_token::Sol,
-    solana_sdk::{pubkey::Pubkey, stake::state::Lockup},
+    solomka_sdk::native_token::Sol,
+    solomka_sdk::{pubkey::Pubkey, stake::state::Lockup},
     spl_stake_pool::state::{Fee, StakePool, StakeStatus, ValidatorList, ValidatorStakeInfo},
     std::fmt::{Display, Formatter, Result, Write},
 };

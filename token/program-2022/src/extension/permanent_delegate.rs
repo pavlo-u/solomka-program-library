@@ -4,7 +4,7 @@ use {
         pod::*,
     },
     bytemuck::{Pod, Zeroable},
-    solana_program::pubkey::Pubkey,
+    solomka_program::pubkey::Pubkey,
 };
 
 /// Permanent delegate extension data for mints.

@@ -5,7 +5,7 @@ mod helpers;
 
 use helpers::*;
 use solana_program_test::*;
-use solana_sdk::{
+use solomka_sdk::{
     signature::{Keypair, Signer},
     transaction::Transaction,
 };

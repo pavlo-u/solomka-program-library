@@ -2,7 +2,7 @@
 use {
     crate::pod::PodU32,
     bytemuck::{Pod, Zeroable},
-    solana_program::program_error::ProgramError,
+    solomka_program::program_error::ProgramError,
 };
 
 /// Length in TLV structure

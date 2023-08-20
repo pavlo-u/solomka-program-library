@@ -7,7 +7,7 @@ use {
         tokio::{self, sync::Mutex},
         ProgramTestContext,
     },
-    solana_sdk::{
+    solomka_sdk::{
         pubkey::Pubkey, signature::Signer, signer::keypair::Keypair, system_instruction,
         transaction::Transaction,
     },

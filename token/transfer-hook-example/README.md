@@ -15,7 +15,7 @@ import this crate, and then use it with `solana-program-test`, ie:
 ```rust
 use {
     solana_program_test::{processor, ProgramTest},
-    solana_sdk::{account::Account, instruction::AccountMeta},
+    solomka_sdk::{account::Account, instruction::AccountMeta},
     spl_transfer_hook_example::state::example_data,
     spl_transfer_hook_interface::get_extra_account_metas_address,
 };

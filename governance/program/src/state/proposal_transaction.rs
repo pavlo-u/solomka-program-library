@@ -13,7 +13,7 @@ use crate::{
     PROGRAM_AUTHORITY_SEED,
 };
 use borsh::{BorshDeserialize, BorshSchema, BorshSerialize};
-use solana_program::{
+use solomka_program::{
     account_info::AccountInfo,
     clock::UnixTimestamp,
     instruction::{AccountMeta, Instruction},
@@ -251,7 +251,7 @@ mod test {
     use {
         super::*,
         base64::{engine::general_purpose, Engine as _},
-        solana_program::{bpf_loader_upgradeable, clock::Epoch},
+        solomka_program::{bpf_loader_upgradeable, clock::Epoch},
         std::str::FromStr,
     };
 

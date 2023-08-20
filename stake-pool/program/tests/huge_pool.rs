@@ -5,9 +5,9 @@ mod helpers;
 
 use {
     helpers::*,
-    solana_program::{borsh::try_from_slice_unchecked, pubkey::Pubkey, stake},
+    solomka_program::{borsh::try_from_slice_unchecked, pubkey::Pubkey, stake},
     solana_program_test::*,
-    solana_sdk::{
+    solomka_sdk::{
         native_token::LAMPORTS_PER_SOL,
         signature::{Keypair, Signer},
         transaction::Transaction,

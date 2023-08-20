@@ -6,7 +6,7 @@ mod helpers;
 use {
     borsh::BorshSerialize,
     helpers::*,
-    solana_program::{
+    solomka_program::{
         borsh::{get_instance_packed_len, get_packed_len, try_from_slice_unchecked},
         hash::Hash,
         instruction::{AccountMeta, Instruction},
@@ -15,7 +15,7 @@ use {
         stake, system_instruction, sysvar,
     },
     solana_program_test::*,
-    solana_sdk::{
+    solomka_sdk::{
         instruction::InstructionError,
         signature::{Keypair, Signer},
         transaction::{Transaction, TransactionError},

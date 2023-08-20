@@ -10,7 +10,7 @@ into a TLV entry in an account, you can do the following:
 
 ```rust
 use {
-    solana_program::{account_info::AccountInfo, instruction::{AccountMeta, Instruction}, pubkey::Pubkey},
+    solomka_program::{account_info::AccountInfo, instruction::{AccountMeta, Instruction}, pubkey::Pubkey},
     spl_type_length_value::discriminator::{Discriminator, TlvDiscriminator},
     spl_tlv_account_resolution::state::ExtraAccountMetas,
 };

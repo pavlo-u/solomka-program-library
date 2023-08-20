@@ -6,7 +6,7 @@ use crate::{
 };
 use arrayref::{array_mut_ref, array_ref, array_refs, mut_array_refs};
 use enum_dispatch::enum_dispatch;
-use solana_program::{
+use solomka_program::{
     account_info::AccountInfo,
     msg,
     program_error::ProgramError,

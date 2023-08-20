@@ -15,7 +15,7 @@ use crate::{
     state::{SwapState, SwapV1, SwapVersion},
 };
 use num_traits::FromPrimitive;
-use solana_program::{
+use solomka_program::{
     account_info::{next_account_info, AccountInfo},
     clock::Clock,
     decode_error::DecodeError,
@@ -1283,11 +1283,11 @@ mod tests {
             withdraw_all_token_types, withdraw_single_token_type_exact_amount_out,
         },
     };
-    use solana_program::{
+    use solomka_program::{
         clock::Clock, entrypoint::SUCCESS, instruction::Instruction, program_pack::Pack,
         program_stubs, rent::Rent,
     };
-    use solana_sdk::account::{
+    use solomka_sdk::account::{
         create_account_for_test, create_is_signer_account_infos, Account as SolanaAccount,
     };
     use spl_token_2022::{

@@ -1,5 +1,5 @@
-use solana_program::pubkey::Pubkey;
-use solana_sdk::signature::Keypair;
+use solomka_program::pubkey::Pubkey;
+use solomka_sdk::signature::Keypair;
 use spl_governance_chat::state::ChatMessage;
 
 #[derive(Debug)]

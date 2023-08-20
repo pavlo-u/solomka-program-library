@@ -5,7 +5,7 @@ use {
         pod::*,
     },
     bytemuck::{Pod, Zeroable},
-    solana_program::{clock::Epoch, entrypoint::ProgramResult},
+    solomka_program::{clock::Epoch, entrypoint::ProgramResult},
     std::{
         cmp,
         convert::{TryFrom, TryInto},
@@ -166,7 +166,7 @@ impl Extension for TransferFeeAmount {
 
 #[cfg(test)]
 pub(crate) mod test {
-    use {super::*, proptest::prelude::*, solana_program::pubkey::Pubkey, std::convert::TryFrom};
+    use {super::*, proptest::prelude::*, solomka_program::pubkey::Pubkey, std::convert::TryFrom};
 
     const NEWER_EPOCH: u64 = 100;
     const OLDER_EPOCH: u64 = 1;

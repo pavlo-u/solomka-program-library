@@ -3,7 +3,7 @@
 use {
     borsh::BorshSerialize,
     mpl_token_metadata::{pda::find_metadata_account, state::Metadata},
-    solana_program::{
+    solomka_program::{
         borsh::{get_instance_packed_len, get_packed_len, try_from_slice_unchecked},
         hash::Hash,
         instruction::Instruction,
@@ -13,7 +13,7 @@ use {
         stake, system_instruction, system_program,
     },
     solana_program_test::{processor, BanksClient, ProgramTest, ProgramTestContext},
-    solana_sdk::{
+    solomka_sdk::{
         account::{Account as SolanaAccount, WritableAccount},
         clock::{Clock, Epoch},
         compute_budget::ComputeBudgetInstruction,

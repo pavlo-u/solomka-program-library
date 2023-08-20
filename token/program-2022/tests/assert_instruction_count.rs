@@ -3,7 +3,7 @@
 mod action;
 use {
     solana_program_test::{processor, tokio, ProgramTest},
-    solana_sdk::{
+    solomka_sdk::{
         program_pack::Pack,
         pubkey::Pubkey,
         signature::{Keypair, Signer},

@@ -1,6 +1,6 @@
-use solana_program::program_option::COption;
+use solomka_program::program_option::COption;
 use solana_program_test::*;
-use solana_sdk::{
+use solomka_sdk::{
     commitment_config::CommitmentLevel,
     instruction::Instruction,
     native_token::LAMPORTS_PER_SOL,

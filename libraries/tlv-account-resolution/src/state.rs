@@ -5,7 +5,7 @@ use {
         error::AccountResolutionError,
         pod::{PodAccountMeta, PodSlice, PodSliceMut},
     },
-    solana_program::{
+    solomka_program::{
         account_info::AccountInfo,
         instruction::{AccountMeta, Instruction},
         program_error::ProgramError,
@@ -27,7 +27,7 @@ use {
 ///
 /// ```
 /// use {
-///     solana_program::{
+///     solomka_program::{
 ///         account_info::AccountInfo, instruction::{AccountMeta, Instruction},
 ///         pubkey::Pubkey
 ///     },
@@ -227,7 +227,7 @@ impl ExtraAccountMetas {
 mod tests {
     use {
         super::*,
-        solana_program::{clock::Epoch, instruction::AccountMeta, pubkey::Pubkey},
+        solomka_program::{clock::Epoch, instruction::AccountMeta, pubkey::Pubkey},
         spl_type_length_value::discriminator::Discriminator,
     };
 

@@ -7,7 +7,7 @@ use crate::{
     },
     error::SwapError,
 };
-use solana_program::program_error::ProgramError;
+use solomka_program::program_error::ProgramError;
 
 #[cfg(feature = "production")]
 use std::env;

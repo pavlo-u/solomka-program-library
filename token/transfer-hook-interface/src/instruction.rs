@@ -1,7 +1,7 @@
 //! Instruction types
 
 use {
-    solana_program::{
+    solomka_program::{
         instruction::{AccountMeta, Instruction},
         program_error::ProgramError,
         pubkey::Pubkey,
@@ -174,7 +174,7 @@ pub fn initialize_extra_account_metas(
 
 #[cfg(test)]
 mod test {
-    use {super::*, crate::NAMESPACE, solana_program::hash};
+    use {super::*, crate::NAMESPACE, solomka_program::hash};
 
     #[test]
     fn validate_packing() {

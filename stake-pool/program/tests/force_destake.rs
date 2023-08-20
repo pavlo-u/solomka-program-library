@@ -5,9 +5,9 @@ mod helpers;
 
 use {
     helpers::*,
-    solana_program::{instruction::InstructionError, pubkey::Pubkey, stake},
+    solomka_program::{instruction::InstructionError, pubkey::Pubkey, stake},
     solana_program_test::*,
-    solana_sdk::{
+    solomka_sdk::{
         account::{Account, WritableAccount},
         clock::Epoch,
         signature::Signer,

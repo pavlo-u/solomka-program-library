@@ -10,7 +10,7 @@ use solana_clap_utils::{
 use solana_cli_output::OutputFormat;
 use solana_client::nonblocking::rpc_client::RpcClient;
 use solana_remote_wallet::remote_wallet::RemoteWalletManager;
-use solana_sdk::{
+use solomka_sdk::{
     account::Account as RawAccount, commitment_config::CommitmentConfig, hash::Hash,
     pubkey::Pubkey, signature::Signer,
 };
@@ -55,21 +55,21 @@ impl<'a> Config<'a> {
         multisigner_ids: &'a mut Vec<Pubkey>,
     ) -> Config<'a> {
         let cli_config = if let Some(config_file) = matches.value_of("config_file") {
-            solana_cli_config::Config::load(config_file).unwrap_or_else(|_| {
+            solomka_cli_config::Config::load(config_file).unwrap_or_else(|_| {
                 eprintln!("error: Could not find config file `{}`", config_file);
                 exit(1);
             })
-        } else if let Some(config_file) = &*solana_cli_config::CONFIG_FILE {
-            solana_cli_config::Config::load(config_file).unwrap_or_default()
+        } else if let Some(config_file) = &*solomka_cli_config::CONFIG_FILE {
+            solomka_cli_config::Config::load(config_file).unwrap_or_default()
         } else {
-            solana_cli_config::Config::default()
+            solomka_cli_config::Config::default()
         };
         let json_rpc_url = normalize_to_url_if_moniker(
             matches
                 .value_of("json_rpc_url")
                 .unwrap_or(&cli_config.json_rpc_url),
         );
-        let websocket_url = solana_cli_config::Config::compute_websocket_url(&json_rpc_url);
+        let websocket_url = solomka_cli_config::Config::compute_websocket_url(&json_rpc_url);
         let rpc_client = Arc::new(RpcClient::new_with_commitment(
             json_rpc_url,
             CommitmentConfig::confirmed(),
@@ -129,14 +129,14 @@ impl<'a> Config<'a> {
         websocket_url: String,
     ) -> Config<'a> {
         let cli_config = if let Some(config_file) = matches.value_of("config_file") {
-            solana_cli_config::Config::load(config_file).unwrap_or_else(|_| {
+            solomka_cli_config::Config::load(config_file).unwrap_or_else(|_| {
                 eprintln!("error: Could not find config file `{}`", config_file);
                 exit(1);
             })
-        } else if let Some(config_file) = &*solana_cli_config::CONFIG_FILE {
-            solana_cli_config::Config::load(config_file).unwrap_or_default()
+        } else if let Some(config_file) = &*solomka_cli_config::CONFIG_FILE {
+            solomka_cli_config::Config::load(config_file).unwrap_or_default()
         } else {
-            solana_cli_config::Config::default()
+            solomka_cli_config::Config::default()
         };
         let multisigner_pubkeys =
             Self::extract_multisig_signers(matches, wallet_manager, bulk_signers, multisigner_ids);

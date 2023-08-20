@@ -12,7 +12,7 @@ test-sbf = []
 
 [dependencies]
 borsh = "0.9.1"
-solana-program = "1.14.12"
+solomka-program = "1.14.12"
 spl-token = { version = "3.5", path = "../../token/program", features = ["no-entrypoint"] }
 spl-associated-token-account = {version = "1.1", path = "../../associated-token-account/program", features = ["no-entrypoint"]}
 metaplex-token-metadata = { version = "0.0.1", features = ["no-entrypoint"] }
@@ -20,7 +20,7 @@ thiserror = "1.0"
 
 [dev-dependencies]
 solana-program-test = "1.14.12"
-solana-sdk = "1.14.12"
+solomka-sdk = "1.14.12"
 
 [lib]
 crate-type = ["cdylib", "lib"]

@@ -3,7 +3,7 @@
 
 use {
     solana_program_test::*,
-    solana_sdk::{signature::Signer, transaction::Transaction},
+    solomka_sdk::{signature::Signer, transaction::Transaction},
     spl_math::{id, instruction, processor::process_instruction},
 };
 

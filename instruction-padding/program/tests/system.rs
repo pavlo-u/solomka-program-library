@@ -2,7 +2,7 @@
 
 use {
     solana_program_test::{processor, tokio, ProgramTest},
-    solana_sdk::{
+    solomka_sdk::{
         instruction::AccountMeta, native_token::LAMPORTS_PER_SOL, pubkey::Pubkey,
         signature::Signer, system_instruction, transaction::Transaction,
     },

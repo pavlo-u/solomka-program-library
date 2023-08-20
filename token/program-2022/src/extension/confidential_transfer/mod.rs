@@ -5,7 +5,7 @@ use {
         pod::*,
     },
     bytemuck::{Pod, Zeroable},
-    solana_program::entrypoint::ProgramResult,
+    solomka_program::entrypoint::ProgramResult,
     solana_zk_token_sdk::zk_token_elgamal::pod,
 };
 

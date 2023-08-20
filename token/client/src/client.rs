@@ -2,7 +2,7 @@ use {
     async_trait::async_trait,
     solana_client::nonblocking::rpc_client::RpcClient,
     solana_program_test::{tokio::sync::Mutex, BanksClient, ProgramTestContext},
-    solana_sdk::{
+    solomka_sdk::{
         account::Account, hash::Hash, pubkey::Pubkey, signature::Signature,
         transaction::Transaction,
     },

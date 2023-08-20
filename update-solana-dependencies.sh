@@ -26,17 +26,17 @@ crates=(
   solana-bpf-loader-program
   solana-clap-utils
   solana-clap-v3-utils
-  solana-cli-config
+  solomka-cli-config
   solana-cli-output
   solana-client
   solana-core
   solana-logger
   solana-notifier
-  solana-program
+  solomka-program
   solana-program-test
   solana-remote-wallet
   solana-runtime
-  solana-sdk
+  solomka-sdk
   solana-stake-program
   solana-test-validator
   solana-transaction-status

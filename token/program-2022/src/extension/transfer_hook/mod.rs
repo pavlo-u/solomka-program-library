@@ -4,7 +4,7 @@ use {
         pod::OptionalNonZeroPubkey,
     },
     bytemuck::{Pod, Zeroable},
-    solana_program::pubkey::Pubkey,
+    solomka_program::pubkey::Pubkey,
 };
 
 /// Instructions for the TransferHook extension

@@ -13,8 +13,8 @@ pub mod offchain;
 pub mod onchain;
 
 // Export current sdk types for downstream users building with a different sdk version
-pub use solana_program;
-use solana_program::pubkey::Pubkey;
+pub use solomka_program;
+use solomka_program::pubkey::Pubkey;
 
 /// Namespace for all programs implementing transfer-hook
 pub const NAMESPACE: &str = "spl-transfer-hook-interface";

@@ -3,9 +3,9 @@
 pub mod flash_loan_receiver;
 
 use assert_matches::*;
-use solana_program::{program_option::COption, program_pack::Pack, pubkey::Pubkey};
+use solomka_program::{program_option::COption, program_pack::Pack, pubkey::Pubkey};
 use solana_program_test::*;
-use solana_sdk::{
+use solomka_sdk::{
     account::Account,
     signature::{read_keypair_file, Keypair, Signer},
     system_instruction::create_account,

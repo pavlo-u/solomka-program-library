@@ -5,9 +5,9 @@ mod helpers;
 
 use {
     helpers::*,
-    solana_program::{instruction::InstructionError, stake},
+    solomka_program::{instruction::InstructionError, stake},
     solana_program_test::*,
-    solana_sdk::{
+    solomka_sdk::{
         borsh::try_from_slice_unchecked,
         signature::{Keypair, Signer},
         transaction::TransactionError,

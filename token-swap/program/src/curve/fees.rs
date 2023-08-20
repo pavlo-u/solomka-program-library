@@ -2,7 +2,7 @@
 
 use crate::error::SwapError;
 use arrayref::{array_mut_ref, array_ref, array_refs, mut_array_refs};
-use solana_program::{
+use solomka_program::{
     program_error::ProgramError,
     program_pack::{IsInitialized, Pack, Sealed},
 };

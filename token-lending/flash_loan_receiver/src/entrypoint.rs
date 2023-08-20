@@ -1,4 +1,4 @@
-use solana_program::{
+use solomka_program::{
     account_info::AccountInfo, entrypoint, entrypoint::ProgramResult, pubkey::Pubkey,
 };
 

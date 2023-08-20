@@ -6,7 +6,7 @@ mod helpers;
 use {
     helpers::*,
     solana_program_test::*,
-    solana_sdk::{
+    solomka_sdk::{
         borsh::try_from_slice_unchecked,
         instruction::InstructionError,
         signature::{Keypair, Signer},

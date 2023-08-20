@@ -1,9 +1,9 @@
 #![cfg(feature = "test-sbf")]
 
 use borsh::de::BorshDeserialize;
-use solana_program::{hash::Hash, program_pack::Pack, pubkey::Pubkey, system_instruction};
+use solomka_program::{hash::Hash, program_pack::Pack, pubkey::Pubkey, system_instruction};
 use solana_program_test::*;
-use solana_sdk::{
+use solomka_sdk::{
     account::Account,
     signature::{Keypair, Signer},
     transaction::Transaction,

@@ -2,7 +2,7 @@
 
 use {
     crate::processor,
-    solana_program::{
+    solomka_program::{
         account_info::AccountInfo, entrypoint, entrypoint::ProgramResult,
         program_error::PrintProgramError, pubkey::Pubkey,
     },

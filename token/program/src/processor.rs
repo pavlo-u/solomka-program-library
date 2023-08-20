@@ -7,7 +7,7 @@ use crate::{
     state::{Account, AccountState, Mint, Multisig},
     try_ui_amount_into_amount,
 };
-use solana_program::{
+use solomka_program::{
     account_info::{next_account_info, AccountInfo},
     entrypoint::ProgramResult,
     msg,
@@ -687,7 +687,7 @@ impl Processor {
                 authority_info,
                 account_info_iter.as_slice(),
             )?;
-        } else if !solana_program::incinerator::check_id(destination_account_info.key) {
+        } else if !solomka_program::incinerator::check_id(destination_account_info.key) {
             return Err(ProgramError::InvalidAccountData);
         }
 
@@ -1015,7 +1015,7 @@ fn delete_account(account_info: &AccountInfo) -> Result<(), ProgramError> {
     account_info.assign(&system_program::id());
     let mut account_data = account_info.data.borrow_mut();
     let data_len = account_data.len();
-    solana_program::program_memory::sol_memset(*account_data, 0, data_len);
+    solomka_program::program_memory::sol_memset(*account_data, 0, data_len);
     Ok(())
 }
 
@@ -1031,14 +1031,14 @@ mod tests {
     use super::*;
     use crate::instruction::*;
     use serial_test::serial;
-    use solana_program::{
+    use solomka_program::{
         account_info::IntoAccountInfo,
         clock::Epoch,
         instruction::Instruction,
         program_error::{self, PrintProgramError},
         sysvar::rent,
     };
-    use solana_sdk::account::{
+    use solomka_sdk::account::{
         create_account_for_test, create_is_signer_account_infos, Account as SolanaAccount,
     };
     use std::sync::{Arc, RwLock};
@@ -1052,7 +1052,7 @@ mod tests {
     }
 
     struct SyscallStubs {}
-    impl solana_sdk::program_stubs::SyscallStubs for SyscallStubs {
+    impl solomka_sdk::program_stubs::SyscallStubs for SyscallStubs {
         fn sol_log(&self, _message: &str) {}
 
         fn sol_invoke_signed(
@@ -1081,7 +1081,7 @@ mod tests {
             unsafe {
                 *(var_addr as *mut _ as *mut Rent) = Rent::default();
             }
-            solana_program::entrypoint::SUCCESS
+            solomka_program::entrypoint::SUCCESS
         }
 
         fn sol_set_return_data(&self, data: &[u8]) {
@@ -1098,7 +1098,7 @@ mod tests {
             static ONCE: Once = Once::new();
 
             ONCE.call_once(|| {
-                solana_sdk::program_stubs::set_syscall_stubs(Box::new(SyscallStubs {}));
+                solomka_sdk::program_stubs::set_syscall_stubs(Box::new(SyscallStubs {}));
             });
         }
 
@@ -4654,7 +4654,7 @@ mod tests {
                 &program_id,
                 &incinerator_account_key,
                 &mint_key,
-                &solana_program::incinerator::id(),
+                &solomka_program::incinerator::id(),
             )
             .unwrap(),
             vec![&mut incinerator_account, &mut mint_account],
@@ -4665,7 +4665,7 @@ mod tests {
                 &program_id,
                 &system_account_key,
                 &mint_key,
-                &solana_program::system_program::id(),
+                &solomka_program::system_program::id(),
             )
             .unwrap(),
             vec![&mut system_account, &mut mint_account],
@@ -4722,7 +4722,7 @@ mod tests {
                 close_account(
                     &program_id,
                     &incinerator_account_key,
-                    &solana_program::incinerator::id(),
+                    &solomka_program::incinerator::id(),
                     &owner_key,
                     &[]
                 )
@@ -4740,7 +4740,7 @@ mod tests {
                 close_account(
                     &program_id,
                     &system_account_key,
-                    &solana_program::incinerator::id(),
+                    &solomka_program::incinerator::id(),
                     &owner_key,
                     &[]
                 )
@@ -4832,7 +4832,7 @@ mod tests {
             close_account(
                 &program_id,
                 &incinerator_account_key,
-                &solana_program::incinerator::id(),
+                &solomka_program::incinerator::id(),
                 &owner_key,
                 &[],
             )
@@ -4849,7 +4849,7 @@ mod tests {
             close_account(
                 &program_id,
                 &system_account_key,
-                &solana_program::incinerator::id(),
+                &solomka_program::incinerator::id(),
                 &owner_key,
                 &[],
             )
