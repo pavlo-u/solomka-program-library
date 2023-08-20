@@ -341,7 +341,7 @@ fn process_propose(
                   --from {} \
                   --input-csv {} \
                   --db-path db.{} \
-                  --fee-payer ~/.config/solana/id.json \
+                  --fee-payer ~/.config/solomka/id.json \
                   --owner <FEATURE_PROPOSAL_KEYPAIR>",
         distributor_token_address,
         distribution_file,

@@ -5,7 +5,7 @@ members = ["program"]
 
 [provider]
 cluster = "devnet"
-wallet = "~/.config/solana/id.json"
+wallet = "~/.config/solomka/id.json"
 
 [programs.devnet]
 spl-token-lending = "LendZqTs7gn5CTSJU1jWKhKuVpjJGom45nnwPb2AMTi"

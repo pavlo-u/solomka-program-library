@@ -5,13 +5,14 @@ edition = "2021"
 homepage = "https://spl.solana.com/token"
 license = "Apache-2.0"
 name = "spl-token-cli"
-repository = "https://github.com/solana-labs/solana-program-library"
+repository = "https://github.com/pavlo-u/solomka-program-library"
 version = "2.4.0"
 
 [build-dependencies]
 walkdir = "2"
 
 [dependencies]
+dirs-next = "2.0.0"
 clap = "2.33.3"
 console = "0.15.7"
 serde = "1.0.163"
@@ -42,5 +43,5 @@ serial_test = "2.0.0"
 tempfile = "3.5.0"
 
 [[bin]]
-name = "spl-token"
+name = "solomka-token"
 path = "src/main.rs"

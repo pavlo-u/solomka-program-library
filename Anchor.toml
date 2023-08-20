@@ -16,7 +16,7 @@ exclude = [
 
 [provider]
 cluster = "mainnet"
-wallet = "~/.config/solana/id.json"
+wallet = "~/.config/solomka/id.json"
 
 [programs.mainnet]
 spl_governance = "GovER5Lthms3bLBqWub97yVrMmEogzX7xNjdXpPPCVZw"
