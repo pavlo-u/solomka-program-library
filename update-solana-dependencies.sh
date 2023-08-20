@@ -28,7 +28,7 @@ crates=(
   solana-bucket-map
   solana-clap-utils
   solana-clap-v3-utils
-  solana-cli-config
+  solomka-cli-config
   solana-cli-output
   solana-client
   solana-connection-cache
