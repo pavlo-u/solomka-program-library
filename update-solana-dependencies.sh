@@ -26,7 +26,7 @@ crates=(
   solana-bpf-loader-program
   solana-clap-utils
   solana-clap-v3-utils
-  solana-cli-config
+  solomka-cli-config
   solana-cli-output
   solana-client
   solana-core
